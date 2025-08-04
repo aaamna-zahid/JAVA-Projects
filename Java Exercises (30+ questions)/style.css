@@ -1,0 +1,92 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #212529;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+/* List styling */
+.exercise-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* List items */
+.exercise-list li {
+  background-color: #f1f3f5;
+  padding: 16px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.exercise-list li:hover {
+  background-color: #e9ecef;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Links */
+.exercise-list a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: block;
+  transition: color 0.3s;
+}
+
+.exercise-list a:hover {
+  color: #0056a3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .exercise-list {
+    grid-template-columns: 1fr;
+  }
+}
