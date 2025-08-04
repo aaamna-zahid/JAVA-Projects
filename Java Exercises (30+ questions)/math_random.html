@@ -1,0 +1,34 @@
+<!-- Random number Generator and also how to generate OTP -->
+<!-- Math.random() is a JavaScript function that returns a random 
+ floating-point number between 0 (inclusive) and 1 (exclusive).
+That means it gives a number like0.4583, 0.9992, etc., but never 1.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random Numbers</title>
+    <script type="text/javascript">
+        var y = Math.random(); //get a random number without range
+        console.log("before calculation " + y)
+        //get a random number between a specific range
+        //formula= math.random() *(highest number -lowest number) + lowest number
+        var x = Math.random();
+          x = x * (10 - 1) + 1
+        console.log("After calculation " + x)
+        x = x * (1000 - 1) + 1
+        console.log("For Generating OTP " + x)
+        //For generating the integer instead of float ...
+        console.log("Floor Generating OTP " + Math.floor(x));//removed the decimal part
+        //when we want fixed 4 numbers OTP
+        y = y * 10000
+        console.log("For Generating OTP " + Math.floor(y))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

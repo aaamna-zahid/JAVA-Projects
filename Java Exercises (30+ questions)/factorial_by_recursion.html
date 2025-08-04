@@ -1,0 +1,32 @@
+<!-- Recursion is a programming concept where a function calls itself 
+ to solve a smaller part of the problem, continuing this process until 
+ it reaches a base case that stops the recursion. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial by using Recursion </title>
+    <script type="text/javascript">
+       // var number = prompt("please enter the  number")
+        var number = parseInt(prompt("Please enter the number"));
+        var factorial = 1;
+        function fact(n) {
+            if (n > number) {
+                return ;
+            }
+            factorial = factorial * n;
+            n++;
+            fact(n);
+        }
+        fact(1);
+        console.log(` The factorail of ${number} is   ${factorial} `)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!-- converrt the first letter of the string into uppercase -->
+<!-- funtion to be used 
+  charAt()  to get a character ata an index
+  toUppercase()   to covert into uppercase
+  slice()   to slide any character from the string -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First letter into uppercase</title>
+    <script type="text/javascript">
+        var string = prompt("Please enter the string")
+        //console.log(string)
+        var first = string.charAt(0)   //At 0 index means 0th keeper
+        //console.log(first)
+        //console.log(first.toUpperCase())
+        var rem = string.slice(1)
+        //console.log(rem)
+        var Caps = first.toUpperCase() + rem
+        console.log(`${Caps}`)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

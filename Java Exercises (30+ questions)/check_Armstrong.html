@@ -1,0 +1,47 @@
+<!-- Armstrong number (also called a narcissistic number or pluperfect number) 
+ is a number that is equal to the sum of its own digits each raised
+  to the power of the number of digits.
+3-digit Armstrong number:
+153
+👉 Digits: 1, 5, 3
+👉 Calculation:
+1*1*1 + 5*5*5 + 3*3*3 = 1 + 125 + 27 = 153 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Armstrong Number </title>
+    <script type="text/javascript">
+        var number = parseInt(prompt("Please enter the number"));
+        var temp = number //for 3 digits
+        var noOfDigits = number.toString().length;     //for any number of digits
+        var sum = 0
+        while (temp > 0) {
+            // 153/10= 3
+            //console.log(temp);
+            var digit = temp % 10;
+            // console.log(digit)
+            // console.log(digit ** 3)
+            // sum += digit ** 3 (for 3 no of digits)
+            sum += digit ** noOfDigits;    //for any number of digits
+            //console.log("sum" + sum)
+            temp = parseInt(temp / 10)
+            // console.log(temp);
+            // console.log(`-----------`);
+        }
+        if (sum == number) {
+            console.log(` ${number} is an armstrong number `)
+        } else {
+            console.log(` ${number} is not an armstrong number `)
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

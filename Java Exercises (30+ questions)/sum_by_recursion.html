@@ -1,0 +1,28 @@
+<!-- sum of a natural number using recursion -->
+<!-- jb hm recursion use krte tu hm loop use nhi krte
+or jb loops use nhi krtw tu loop ka concept function k through implement kra kr recursion krwate   -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>natural numbers sum by recursion</title>
+    <script type="text/javascript">
+        function sum(num) {
+            if (num > 0) {
+                return num + sum(num - 1)
+            } else {
+                return num;
+            }
+        }
+        var res = sum(15);
+        console.log(res)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

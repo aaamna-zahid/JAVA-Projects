@@ -1,0 +1,32 @@
+<!-- sort words in Alphabetiv=cal order -->
+<!-- predefined functions
+  SYNTAX   :  string.split(separator, maxsplit)
+separator: (Optional) The delimiter string. If not given, splits on whitespace.
+maxsplit: (Optional) Max number of splits.
+  split('')   used to divide a string into parts based on a separator. 
+  here it is used to convert our string into array
+  sort()   The sort() method is used to arrange elements  in a specific order  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sorting words in alphabetical order</title>
+    <script type="text/javascript">
+        var string = prompt("Please enter the string")
+        //var stringArray = string.split('') //converts the Each alphabet  into array elements  
+         var stringArray = string.split(' ') //converts the each word  into array elements
+        stringArray.sort()  //still an array elements based on words    ...usi array ku sort kr dta 
+         console.log(string)
+        console.log(stringArray) //case sensitive sorting
+        console.log(stringArray.join(' '))  //join the array elements to make it again string
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

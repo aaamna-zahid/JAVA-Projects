@@ -1,0 +1,36 @@
+<!-- Check Palindrome using Arrays method or for loop -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome check</title>
+    <script type="text/javascript">
+        var string = prompt("Please enter the string")
+        //  Check Palindrome using  for loop
+        //  var len =String.length
+        //  var msg='It is a Palindrome'
+        //  for (let i = 0; i < len/2; i++) {
+        //     if (String[i]!=String[len-1-i]) {
+        //         msg='It is not a Palindrome'
+        //     }
+
+        //  }console.log(`${string} : ${msg}`)
+        //  Check Palindrome using  Arrays methopd
+        var stringArray = string.split('') //to convert the string 0r word into array
+        var stringArrayRev = stringArray.reverse()
+        var revString = stringArrayRev.join('')//write in simple string form
+        if (string === revString) {
+            console.log(`${string} :  is Palindrome`)
+        } else {
+            console.log(`${string} :  is not Palindrome`)
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

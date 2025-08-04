@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Among Three</title>
+    <script type="text/javascript">
+        //by using user defined function
+      function check(p,q,r) {
+        if (p>=q && p>=r) {
+            return p;
+        } else if (q>=p && q>=r) {
+            return q;
+        } else {
+            return r;
+        } 
+      }  
+        //using math.max() method
+        var a = prompt("please enter the 1st number")
+        var b = prompt("please enter the 2nd number")
+        var c = prompt("please enter the 3rd number")
+        var x=check(a,b,c);
+       //var x =Math.max(a,b,c)   //math.max() method
+       console.log(`${a},${b},${c}: largest=${x}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

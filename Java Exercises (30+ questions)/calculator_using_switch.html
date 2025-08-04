@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator using switch</title>
+    <script type="text/javascript">
+        var number1 = parseInt(prompt("Please enter the 1st number"))
+        var number2 = parseInt(prompt("Please enter the 2nd number"))
+        var operator = prompt("Please select among +,-,*,/")
+        switch (operator) {
+            case "+":
+                var res = number1 + number2
+                console.log(`${number1} + ${number2} = ${res} `)
+                break;
+            case "-":
+                var res = number1 - number2
+                console.log(`${number1} - ${number2} = ${res} `)
+                break;
+            case "*":
+                var res = number1 * number2
+                console.log(`${number1} * ${number2} = ${res} `)
+                break;
+            case "/":
+                var res = number1 / number2
+                console.log(`${number1} / ${number2} = ${res} `)
+                break;
+            default:
+                console.log(`invalid operator`)
+                break;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

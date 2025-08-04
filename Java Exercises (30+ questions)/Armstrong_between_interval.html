@@ -1,0 +1,46 @@
+<!-- find armstrong number between an interval -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong between a range</title>
+    <script type="text/javascript">
+        var a = parseInt(prompt("Please enter the lower number"));
+        var b = parseInt(prompt("Please enter the upper number"));
+        for (let i = a; i <= b; i++) {
+            var temp = i
+            var noOfDigits = i.toString().length;     //for any number of digits
+            var sum = 0
+            while (temp > 0) {
+                // 153/10= 3
+                //console.log(temp);
+                var digit = temp % 10;
+                // console.log(digit)
+                // console.log(digit ** 3)
+                // sum += digit ** 3 (for 3 no of digits)
+                sum += digit ** noOfDigits;    //for any number of digits
+                //console.log("sum" + sum)
+                temp = parseInt(temp / 10)
+                // console.log(temp);
+                // console.log(`-----------`);
+            }
+            if (sum == i) {
+                console.log(` ${i} is an armstrong number `)
+            }
+            //else {
+            //     console.log(` ${i} is not an armstrong number `)
+            // } console.log(`${i}`)
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

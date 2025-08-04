@@ -1,0 +1,24 @@
+<!--  Replacing characters of a string: predefined fun => replace( )   -->
+<!--   syntax:   string.replace(searchValue, newValue) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Replacing characters of a string</title>
+    <script type="text/javascript">
+        //  var string = prompt("Please enter the string")
+        var string = "Mr. Red has a red car and a red bike"
+        console.log(string)
+        var reg= new RegExp('red','gi') //using regex to remove case sensitivity
+        var newString = string.replace(reg, 'blue')
+        console.log(newString)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

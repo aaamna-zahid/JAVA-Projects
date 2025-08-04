@@ -1,0 +1,27 @@
+<!--  Count no of vowels in a string using REGEX -->
+<!-- REGEX" stands for Regular Expression, which is a pattern used
+    to match character combinations in strings. It is used in searching,
+     replacing, validating, and extracting data from text. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count number of vowels</title>
+    <script type="text/javascript">
+        var string = prompt("Please enter the string")
+        //  [aeiou]	   Character set – matches any one of the vowels: a, e, i, o, u
+        //   g	       Global flag – finds all matches in the string, not just the first
+        //   i	       Case-insensitive – matches both uppercase and lowercase vowels
+ const regex = /[aeiou]/gi
+ var chars=string.match(regex)
+ console.log(chars.join(','))  //comma seprated array converted into join string with commas and without brackets
+ console.log(chars.length)   </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

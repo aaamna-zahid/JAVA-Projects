@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Prime Number</title>
+    <script type="text/javascript">
+        var number = prompt("please enter the number")
+        if (number == 1) {
+            console.log(`${number} is neither prime nor composite number `)
+        } else if (number < 1) {
+            console.log(`${number} is not prime number `)
+        } else {
+            for (let index = 2; index < number; index++) {
+                if (number % index == 0) {
+                    var res = `${number} is not prime  number`
+                    break;  //jse hi condition true hwi tu loop break hu jye gi
+                } else {
+                    var res = `${number} is a prime  number`
+                }
+            }
+            console.log(res);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

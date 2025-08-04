@@ -1,0 +1,30 @@
+<!--  factorial formula :  n!=1*2*3*.....n       -->
+  <!-- user defined method  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial of a number</title>
+    <script type="text/javascript">
+        var number = prompt("please enter the  number")
+        var factorial = 1;
+        if (number == 0) {
+            console.log(` The factorail of ${number} is 1 `)
+        } else if (number < 0) {
+            console.log(` The factorail of negative number is not possible  `)
+        } else {
+            for (let i = 1; i < number; i++) {
+                factorial = factorial * i;
+            }
+            console.log(` The factorail of ${number} is   ${factorial} `)
+        }
+    </script>
+</head>
+<!-- but it can also be done using the recursion method  -->
+<body>
+
+</body>
+
+</html>
